@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Shared\" />
+    <Folder Include="Things\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Domain\Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="StratmanMedia.Repositories.EFCore">
+      <HintPath>..\..\lib\StratmanMedia.Repositories.EFCore.dll</HintPath>
+    </Reference>
+    <Reference Include="StratmanMedia.ResponseObjects">
+      <HintPath>..\..\lib\StratmanMedia.ResponseObjects.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
